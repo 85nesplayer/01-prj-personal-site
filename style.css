@@ -1,1 +1,183 @@
-/* Add you CSS here */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	color: #243447;
+	line-height: 1.6;
+}
+
+.topbar {
+	background: #f3ab34;
+	padding: 8px 16px;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.nav a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.hero {
+	position: relative;
+	height: 620px;
+	overflow: hidden;
+	background: #27424d;
+}
+
+.hero-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.hero-overlay {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(111, 203, 182, 0.38);
+}
+
+.hero-card {
+	text-align: center;
+	width: min(720px, calc(100% - 40px));
+	padding: 40px 20px 32px;
+	background: rgba(188, 232, 219, 0.28);
+	border-radius: 6px;
+}
+
+.hero-name-bar {
+	width: 320px;
+	min-height: 64px;
+	margin: 0 auto 24px;
+	background: #0c4d61;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 16px;
+	box-sizing: border-box;
+}
+
+.hero-name-bar h1 {
+	margin: 0;
+	color: #ffffff;
+	font-size: 2rem;
+	line-height: 1.1;
+	text-align: center;
+}
+
+.portrait {
+	width: 270px;
+	height: 270px;
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	background: #e6e6e6;
+}
+
+.intro {
+	max-width: 600px;
+	margin: 18px auto 0;
+	font-size: 1.1rem;
+	color: #0d4961;
+}
+
+.about-band {
+	background: linear-gradient(180deg, rgba(150, 164, 214, 0.92) 0%, rgba(124, 140, 201, 0.92) 100%);
+	padding: 36px 20px 44px;
+	text-align: center;
+}
+
+.about-band h2,
+.skills-band h2 {
+	margin: 0 0 16px;
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 28px;
+	max-width: 980px;
+	margin: 0 auto;
+	text-align: right;
+	flex-wrap: wrap;
+}
+
+.about-image {
+	width: min(320px, 100%);
+	max-width: 320px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 8px 24px rgba(36, 52, 71, 0.2);
+}
+
+.about-content p {
+	max-width: 560px;
+	margin: 0;
+	color: #ffffff;
+	font-size: 1.05rem;
+}
+
+.skills-band {
+	background: linear-gradient(180deg, #dfe7b2 0%, #c9d37e 100%);
+	padding: 38px 20px 56px;
+	text-align: center;
+}
+
+.skills-row {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.projects-space {
+	height: 80px;
+	background: #ffffff;
+}
+
+@media (max-width: 700px) {
+	.hero {
+		height: 540px;
+	}
+
+	.hero-name-bar {
+		width: 240px;
+		min-height: 56px;
+	}
+
+	.hero-name-bar h1 {
+		font-size: 1.5rem;
+	}
+
+	.portrait {
+		width: 220px;
+		height: 220px;
+	}
+
+	.about-content {
+		text-align: center;
+	}
+
+	.nav {
+		justify-content: center;
+		gap: 16px;
+	}
+}
